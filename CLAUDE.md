@@ -76,6 +76,9 @@ Requires Python 3.13 at `/Library/Frameworks/Python.framework/Versions/3.13/`. B
 
 ## Distribution
 
+- **GitHub Releases on the org repo** (`Elevated-Trading-LLC/photoEditor`, public) since 2026-09-15 — the Drive zip is retired.
+  Recipients use the permanent link `https://github.com/Elevated-Trading-LLC/photoEditor/releases/latest/download/PhotoEditor.zip` (always the newest release).
+- **Ship an update:** push code → `./build_app.sh` + `ditto -c -k --keepParent dist/PhotoEditor.app dist/PhotoEditor.zip` (Mac mini) → `gh repo sync Elevated-Trading-LLC/photoEditor --source jaded423/photoEditor` → `gh release create vX.Y.Z dist/PhotoEditor.zip -R Elevated-Trading-LLC/photoEditor --target main`. Org repo's branch is `main`, local/personal is `main` too (not `master`).
 - **Not code-signed** — recipients must run `xattr -cr PhotoEditor.app` after downloading
 - $99/year Apple Developer ID needed for frictionless distribution (not yet set up)
 

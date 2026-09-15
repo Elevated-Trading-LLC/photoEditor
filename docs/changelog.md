@@ -13,6 +13,20 @@ Format: Each entry includes date, summary, and details.
 
 ---
 
+## 2026-09-15 - Distribution moved to GitHub Releases (Elevated org)
+
+**What changed:**
+- First GitHub release: `v1.0.0` on `Elevated-Trading-LLC/photoEditor`, asset = the 2026-09-04 build
+  (`dist/PhotoEditor.zip`, sha256 e42b0ced…, byte-identical to the Drive copy).
+- Stable download link for recipients: `…/releases/latest/download/PhotoEditor.zip` — always the newest
+  release, never changes. INSTALL.md + README.html + INSTALL-README.pdf now point there, not at Drive.
+- Org repo (`main`) synced from `jaded423/photoEditor` via `gh repo sync`; it had drifted one commit.
+
+**Why:** Joshua loses Drive access after leaving Elevated (end of Sept 2026); the org repo outlives him.
+Future update = push code → `./build_app.sh` + zip on the Mac mini → `gh release create vX.Y.Z dist/PhotoEditor.zip -R Elevated-Trading-LLC/photoEditor`.
+
+---
+
 ## 2026-09-04 - Scene-aware focal cut (held bud only)
 
 **What changed:**
